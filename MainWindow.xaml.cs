@@ -7,10 +7,19 @@ using System.Windows;
 using UtilityLibrary;
 
 
+// this program is intentionally non-dpi aware.  
+// to make this program dpi aware, un-comment
+// the following in the app.manifest file
+//
+//	<!--<application xmlns = "urn:schemas-microsoft-com:asm.v3">
+//	<windowsSettings>
+//	<dpiAwareness xmlns = "http://schemas.microsoft.com/SMI/2016/WindowsSettings">PerMonitorV2</dpiAwareness>
+//	<dpiAware xmlns = "http://schemas.microsoft.com/SMI/2005/WindowsSettings">true</dpiAware>
+//	</windowsSettings>
+//	</application>-->
 
 namespace ScreenParameterInfo
 {
-
     public partial class MainWindow : Window, INotifyPropertyChanged
     {
 		private string message1;
