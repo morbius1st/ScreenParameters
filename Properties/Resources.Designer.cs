@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace ScreenParameters.Properties
+namespace ScreenParameterInfo.Properties
 {
 
 
@@ -34,30 +34,32 @@ namespace ScreenParameters.Properties
         {
         }
 
-        /// <summary>
-        ///   Returns the cached ResourceManager instance used by this class.
-        /// </summary>
-        [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Resources.ResourceManager ResourceManager
-        {
-            get
-            {
-                if ((resourceMan == null))
-                {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("ScreenParameters.Properties.Resources", typeof(Resources).Assembly);
-                    resourceMan = temp;
-                }
-                return resourceMan;
-            }
-            set
-            {
-                if (value != null)
-                {
-                    resourceMan = value;
-                }
-            }
+		/// <summary>
+		///   Returns the cached ResourceManager instance used by this class.
+		/// </summary>
+		[global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+		internal static global::System.Resources.ResourceManager ResourceManager
+		{
+			get
+			{
+				if ((resourceMan == null))
+				{
+					global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("ScreenParameters.Properties.Resources", typeof(Resources).Assembly);
+					resourceMan = temp;
+				}
 
-            /// <summary>
+				return resourceMan;
+			}
+			set
+			{
+				if (value != null)
+				{
+					resourceMan = value;
+				}
+			}
+		}
+
+		/// <summary>
             ///   Overrides the current thread's CurrentUICulture property for all
             ///   resource lookups using this strongly typed resource class.
             /// </summary>

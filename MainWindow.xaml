@@ -1,12 +1,65 @@
-﻿<Window x:Class="ScreenParameters.MainWindow"
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:ScreenParameters"
-        mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
-    </Grid>
+﻿<Window Title="MainWindow"
+		Name="mainWindow"
+		x:Class="ScreenParameterInfo.MainWindow"
+		xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+		xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+		xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+		xmlns:local="clr-namespace:ScreenParameterInfo"
+		xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+		Width="750"
+		Height="450"
+		MinWidth="750"
+		MinHeight="450"
+		mc:Ignorable="d"
+		Background="#FF2C2C2C"
+		DataContext="{Binding ElementName=mainWindow}"
+		>
+	<Grid
+			HorizontalAlignment="Stretch"
+			VerticalAlignment="Stretch"
+			>
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition />
+			<ColumnDefinition Width="100" />
+		</Grid.ColumnDefinitions>
+		<TextBox x:Name="textBlock"
+				Grid.Column="0"
+				FontSize="14"
+				FontFamily="Lucida Console"
+				Margin="5,5,0,10"
+				HorizontalAlignment="Stretch"
+				VerticalAlignment="Stretch"
+				Text="{Binding message}"
+				TextAlignment="Left"
+				TextWrapping="Wrap"
+				Background="#FF2C2C2C"
+				Foreground="White" 
+				IsReadOnly="True"
+				/>
+		<Button x:Name="btn_exit" Content="Exit"
+				Grid.Column="1"
+				Margin="0,0,10,10"
+				Width="80"
+				Height="30"
+				HorizontalAlignment="Right"
+				VerticalAlignment="Bottom"
+				Click="Btn_exit_Click"
+				/>
+		<Button x:Name="btn_showLocation"
+				Grid.Column="1"
+				Margin="0,0,10,45"
+				Width="80"
+				Height="30"
+				HorizontalAlignment="Right"
+				VerticalAlignment="Bottom" Click="Btn_showLocation_Click"
+				>
+			<Button.Content>
+				<TextBlock
+						FontSize="10"
+						TextAlignment="Center"
+						Text="Display&#xA;Info"
+						/>
+			</Button.Content>
+		</Button>
+	</Grid>
 </Window>
