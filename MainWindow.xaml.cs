@@ -4,6 +4,7 @@ using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading;
 using System.Windows;
+using System.Windows.Documents;
 using UtilityLibrary;
 
 
@@ -28,6 +29,7 @@ namespace ScreenParameterInfo
 		public MainWindow()
         {
             InitializeComponent();
+
         }
 
 		public string message
